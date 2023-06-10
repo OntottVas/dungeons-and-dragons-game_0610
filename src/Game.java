@@ -56,7 +56,7 @@ public class Game {
                 gameOver = true;
                 // Ha jó inputot ad meg (1 és tömb hossza között) és harcol:
                 // Tárold el egy Monster típusú változóban, hogy melyiket választotta a felhasználó!
-            } else if (choice > 0 && choice < monsters.length) {
+            } else if (choice > 0 && choice <= monsters.length) {
                 Monster monster = monsters[choice - 1];
 
                 // Írj egy ciklust, ami addig megy, amíg a szörny és a játékos élete is nagyobb mint 0!
@@ -69,6 +69,7 @@ public class Game {
                     }
                 }
                 player.setLevel(player.getLevel() + 1);
+                player.setHealth(100);
             } else {
                 // Ha rossz inputot ad meg, írd ki: Invalid choice
                 System.out.println("Invalid choice");
