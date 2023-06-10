@@ -52,6 +52,7 @@ public class Character {
         // Ha a szörny élete 0 vagy kisebb, írd ki: [szörny neve] has been defeated!
         if (monster.getHealth() <= 0) {
             System.out.println(monster.getName() + " has been defeated!");
+            System.out.println();
         }
     }
 }
