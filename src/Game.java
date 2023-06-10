@@ -22,9 +22,9 @@ public class Game {
         Monster[] monsters = new Monster[3];
 
         // Töltsd fel szörnyekkel! Példa: monsters[0] = new Monster("Goblin", 50);
-        monsters[0] = new Monster("Ogre", 600);
-        monsters[1] = new Monster("Dragon", 15000);
-        monsters[2] = new Monster("ManBearPig", 250000);
+        monsters[0] = new Monster("Ogre", 25);
+        monsters[1] = new Monster("Dragon", 100);
+        monsters[2] = new Monster("ManBearPig", 1500);
         // Készíts egy gameOver nevű logikai változót, állítds az értékét false-ra!
         boolean gameOver = false;
 
@@ -68,6 +68,7 @@ public class Game {
                         monster.attack(player);
                     }
                 }
+                player.setLevel(player.getLevel() + 1);
             } else {
                 // Ha rossz inputot ad meg, írd ki: Invalid choice
                 System.out.println("Invalid choice");
