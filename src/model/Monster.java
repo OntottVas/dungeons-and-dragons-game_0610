@@ -37,6 +37,7 @@ public class Monster {
 
         // Írd ki: Dealt 20 damage to [játékos neve]!
         System.out.println("Dealt 20 damage to " + player.getName());
+        System.out.println();
 
         // Ha a játékos élete 0 vagy kisebb, írd ki: [játékos neve] has been defeated!
         if(player.getHealth() <= 0) {
